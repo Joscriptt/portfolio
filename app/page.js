@@ -7,6 +7,7 @@ import { useTheme } from "next-themes";
 
 import AnimateLetters from "./AnimateLetters";
 import { Animations } from "./variants";
+import Image from "next/image";
 
 export default function Home() {
   const { theme, systemTheme, setTheme } = useTheme();
@@ -32,16 +33,20 @@ export default function Home() {
             onClick={() => setTheme(theme == "dark" ? "light" : "dark")}
           >
             {theme == "dark" ? (
-              <img
+              <Image
                 className="w-7 h-7 lg:block cursor-pointer hidden"
                 src="/ani/moon.png"
                 alt="moon"
+                width={7}
+                height={7}
               />
             ) : (
-              <img
+              <Image
                 className="w-7 h-7 lg:block cursor-pointer hidden"
                 src="/ani/sun.png"
                 alt="sun"
+                width={7}
+                height={7}
               />
             )}
           </div>

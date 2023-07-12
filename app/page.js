@@ -124,12 +124,12 @@ export default function Home() {
               </p>
               <motion.div className=" mt-4 font-DMSansM w-fit ">
                 <Link href="/project">
-                  <motion.div className="text-sm flex items-center gap-2 cursor-pointer group">
-                    <span>View work</span>
+                  <motion.span className="text-sm flex items-center gap-2 cursor-pointer group">
+                    View work
                     <div className="transition-all group-hover:translate-x-2 duration-300">
                       <ArrowRightIcon className="w-4 h-4" />
                     </div>
-                  </motion.div>
+                  </motion.span>
                 </Link>
               </motion.div>
             </motion.div>
@@ -167,19 +167,19 @@ export default function Home() {
               </p>
               <motion.div className=" mt-4 font-DMSansM w-fit ">
                 <Link href="/project">
-                  <motion.div className="text-sm flex items-center gap-2 cursor-pointer group">
-                    <span>View work</span>
+                  <motion.span className="text-sm flex items-center gap-2 cursor-pointer group">
+                    View work
                     <div className="transition-all group-hover:translate-x-2 duration-300">
                       <ArrowRightIcon className="w-4 h-4" />
                     </div>
-                  </motion.div>
+                  </motion.span>
                 </Link>
               </motion.div>
             </motion.div>
 
             {/* Divider */}
 
-            <div className="my-12  bg-gray-400  max-w-4xl h-[1px] "></div>
+            <div className="my-12  bg-gray-400  max-w-4xl h-[1px] " />
 
             <motion.div
               initial={{ y: 30, opacity: 0 }}

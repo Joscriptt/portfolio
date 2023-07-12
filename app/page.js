@@ -25,8 +25,8 @@ export default function Home() {
             transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 2.5 },
           }}
           className="bg-black dark:bg-purple-800 h-screen absolute z-10 w-full"
-        />
-        <div className="tt" />
+        ></motion.div>
+        <div className="tt"></div>
         <div className="lg:flex  flex-row lg:justify-between min-h-screen relative">
           <div
             className=" absolute right-3 cursor-pointer lg:flex  rounded-full"

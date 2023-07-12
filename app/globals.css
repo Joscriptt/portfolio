@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply dark:bg-black bg-slate-200;
+  }
+}
+
+@font-face {
+  font-family: DMSansB;
+  src: url("../public/font/DMSansB.ttf");
+}
+@font-face {
+  font-family: DMSansM;
+  src: url("../public/font/DMSans-M.ttf");
+}
+@font-face {
+  font-family: DMSansR;
+  src: url("../public/font/DMSans-R.ttf");
+}
+
+@layer base {
+  @font-face {
+    font-family: "Cal Sans";
+    src: url("../public/font/CalSans-SemiBold.woff2") format("woff2"),
+      url("../public/font/CalSans-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+.tt {
+  height: 600px;
+  width: 100%;
+  position: absolute;
+  background: radial-gradient(
+    64.9% 34.2308% at 0% 0%,
+    rgba(14, 251, 255, 0.929) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.ff {
+  display: flex;
+  flex-flow: row nowrap;
+  place-content: flex-start space-between;
+  align-items: flex-start;
+  padding: 0px;
+  width: auto;
+  height: 100%;
+}
+
+.yum {
+  box-shadow: rgba(104, 196, 187, 0.7) 0px 10px 25px 0px;
+}
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+::selection {
+  background: #ff006f;
+}
